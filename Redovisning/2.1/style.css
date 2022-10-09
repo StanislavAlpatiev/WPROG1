@@ -25,3 +25,32 @@ textarea {
   font-size: 16px;
   resize: none;
 }
+
+.header {
+    border: 2px solid black;
+    background-color: lightblue;
+    position: static;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+	text-align: center;
+}
+
+#navUl {
+	list-style: none;
+}
+
+a {
+	padding: 1rem 2rem 1rem 2rem;
+	margin: 1rem 1rem 1rem 1rem;
+}
+
+summery {
+	padding: 1rem 1rem 1rem 1rem;
+}
+
+
+.footer {
+	background-color: lightblue;
+}

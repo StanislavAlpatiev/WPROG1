@@ -8,8 +8,10 @@
 		<meta name="description" content="Front page of website">
 		<meta name="generator" content="Notepad++ v8.4.2">
 		<meta name="keywords" content="Home, FrontPage, Main Page">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="home.css">
 		<link rel="stylesheet" href="style.css">
+		
 	</head>
 	<title> Home </title>
 	<body>
@@ -17,12 +19,10 @@
 			<details>
 				<summary>Navigation</summary>
 				<nav>
-					<ul>
-						<li><a href="home.html">Home</a></li>
-						<li><a href="history.html">History</a></li>
-						<li><a href="now.html">Now</a></li>
-						<li><a href="future.html">Future</a></li>
-					</ul>
+					<a href="home.html">Home</a></li>
+					<a href="history.html">History</a></li>
+					<a href="now.html">Now</a></li>
+					<a href="future.html">Future</a></li>
 				</nav>				
 			</details>
 		</header>
@@ -49,66 +49,58 @@
 					</p>
 					<pre></pre>
 				</article>				
-			</section>
-			
-			<form id="suggestion" method="post" enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php">
-			
+			</section>			
+			<aside>
+				<form id="suggestion" method="post" enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php">
 
-				<label for="name">Name:</label><br>
-				<input type="text" id="name" name="name" placeholder="Name" autofocus list="names" required pattern="^[A-Za-zÀ-ÿ ,.'-]+$" title="Please enter your name"><br>
-				<datalist id="names">
-					<option value="Anonymous">
-				</datalist>
-				
-				<label for="email">Email:</label><br>
-				<input type="email" id="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Please enter your Email"><br>
-				
-				<label for="url">Your website:</label><br>
-				<input type="url" id="url" name="url" placeholder="URL" title="Please enter a URL to your website, e.g. Facebook/LinkedIn"><br>
-				
-				<label for="subject">Subject</label><br>
-				<select id="subject" name="subject" form="suggestion" required>
-					<option value="bug">Bug report</option>
-					<option value="advice">Advice</option>
-					<option value="business">Business</option>
-				</select><br>
-				
-				<textarea id="message" name="message" rows="4" cols="50" placeholder="Your message" required></textarea><br>
-				
-				<div id="fileDiv">
-					<label for="file">File:</label><br>
-					<input type="file" id="file" name="file"><br>
-				</div>
-				
-				<fieldset>
-					<legend>Options:</legend>
-					<div id="optionsDiv">
-						<div class="options" id="reply">
-							<label for="reply">Recive Reply:</label><br>
-							<input type="checkbox" id="wantReply" name="wantReply"><br>
-						</div>
-						<div class="options" id="copy">
-							<label for="copy">Recive Copy:</label><br>
-							<input type="radio" id="wantCopyYes" name="wantCopy" value="Yes">
-							<label for="wantCopyYes">Yes</label><br>
-							<input type="radio" id="wantCopyNo" name="wantCopy" value="No" checked>
-							<label for="wantCopyNo">No</label><br>
-						</div>
-					</div>
-				</fieldset><br>
-				<input type="submit"  value="Send">
-			</form>
+					<label for="name">Name:</label><br>
+					<input type="text" id="name" name="name" placeholder="Name" autofocus list="names" required pattern="^[A-Za-zÀ-ÿ ,.'-]+$" title="Please enter your name"><br>
+					<datalist id="names">
+						<option value="Anonymous">
+					</datalist>
+					
+					<label for="email">Email:</label><br>
+					<input type="email" id="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Please enter your Email"><br>
+					
+					<label for="url">Your website:</label><br>
+					<input type="url" id="url" name="url" placeholder="URL" title="Please enter a URL to your website, e.g. Facebook/LinkedIn"><br>
+					
+					<label for="subject">Subject</label><br>
+					<select id="subject" name="subject" form="suggestion" required>
+						<option value="bug">Bug report</option>
+						<option value="advice">Advice</option>
+						<option value="business">Business</option>
+					</select><br>
+					
+					<textarea id="message" name="message" rows="4" cols="50" placeholder="Your message" required></textarea><br>
+					
+					
+						<label for="file">File:</label><br>
+						<input type="file" id="file" name="file"><br>
+
+					
+					<fieldset>
+						<legend>Options:</legend>
+						
+								<label for="reply">Recive Reply:</label><br>
+								<input type="checkbox" id="wantReply" name="wantReply"><br>
+							
+								<label for="copy">Recive Copy:</label><br>
+								<input type="radio" id="wantCopyYes" name="wantCopy" value="Yes">
+								<label for="wantCopyYes">Yes</label><br>
+								<input type="radio" id="wantCopyNo" name="wantCopy" value="No" checked>
+								<label for="wantCopyNo">No</label><br>
+					</fieldset><br>
+					<input type="submit"  value="Send">
+				</form>
+			</aside>
 		</main>
-		<aside>
-		</aside>
-		<fotter class="fotter">
-			<div id="fotterDiv">
+		<footer class="footer">
 				<p>Contact Me:<p>
 				<a href="https://mail.google.com/mail/?view=cm&fs=1&to=stal5991@student.su.se" id="emailLink">
 					stal5991@student.su.se
 				</a>
-			</div>
-		</fotter>
+		</footer>
 	</body>
 </html>
 
