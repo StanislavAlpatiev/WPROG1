@@ -1,0 +1,52 @@
+.header {
+    border: 2px solid black;
+    background-color: lightblue;
+    position: static;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+
+
+form {
+    border: 2px solid black;
+    background-color: lightblue;
+	padding: 1rem 1rem 1rem 1rem;
+	text-align: left;
+	margin-top: 45%;
+	margin-right: 45%;
+	margin-bottom: 30%;
+	margin-left: 30%;
+	border-radius: 10px;
+}
+
+#name, #url, #email {
+	width: 99%;
+	margin-right: 3rem;
+}
+
+#fileDiv {
+	text-align: center;
+}
+
+#fotterDiv {
+    border: 2px solid black;
+    background-color: lightblue;
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.options {
+	display: inline-block;
+	padding: 1rem 1rem;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#optionsDiv {
+	text-align: center;
+}
+
