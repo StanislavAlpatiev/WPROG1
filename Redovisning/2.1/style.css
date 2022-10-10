@@ -14,18 +14,6 @@ a:active {
   text-decoration: underline;
 }
 
-textarea {
-  width: 100%;
-  height: 150px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  font-size: 16px;
-  resize: none;
-}
-
 .header {
     border: 2px solid black;
     background-color: lightblue;
@@ -38,6 +26,22 @@ textarea {
 
 #navUl {
 	list-style: none;
+}
+
+main {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+textarea {
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	font-size: 16px;
+	resize: none;
 }
 
 a {
@@ -54,9 +58,52 @@ summery {
 	background-color: lightblue;
 }
 
-@media screen and (max-width: 600px) {
-	body {
-		background-color: blue;
+@media screen and (max-width: 767px) {
+	
+	/*form {
+		border: 2px solid black;
+		background-color: lightblue;
+		padding: 1rem 1rem 1rem 1rem;
+		text-align: left;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		border-radius: 10px;
+		width: 80%;
+		height: 25%;
+	}*/
+	
+	form {
+		border: 2px solid black;
+		background-color: lightblue;
+		padding: 1rem 0rem 1rem 0rem;
+		text-align: left;
+		margin: auto;
+		border-radius: 10px;
+		width: 100%;
+		height: 25%;
+	}
+	
+	/*#name, #url, #email, #message, #file, #subject, #submitbtn {
+		width: 99%;
+		margin-bottom: 0.5rem;
+	}*/	
+	
+	.name, .url, .email, .file, .subject, #message, #submitbtn  {
+		width: 90%;
+		margin-bottom: 0.5rem;
+		font-size: 1rem;
+		text-align: left;
+		margin-left: 5%;
+	}
+	
+	fieldset {
+		width: 90%;
+		margin-bottom: 0.5rem;
+		font-size: 1rem;
+		text-align: left;
+		margin-left: 5%;
 	}
 }
 
@@ -67,7 +114,18 @@ summery {
   
     header {
 		font-size: 1.5rem;
-		
+	}
+	
+	form {
+		border: 2px solid black;
+		background-color: lightblue;
+		padding: 1rem 0rem 1rem 0rem;
+		text-align: left;
+		margin: auto;
+		border-radius: 10px;
+		width: 100%;
+		height: 25%;
+		font-size: 1.5rem;
 	}
 	
 	summery.details {
@@ -93,6 +151,34 @@ summery {
 	ul {
 		font-size: 1.5rem;
 	}
+	
+	.name, .url, .email, .file, .subject, #message, #submitbtn  {
+		width: 90%;
+		margin-bottom: 0.5rem;
+		font-size: 1.5rem;
+		text-align: left;
+		margin-left: 5%;
+	}
+	
+	fieldset {
+		width: 90%;
+		margin-bottom: 0.5rem;
+		font-size: 1.5rem;
+		text-align: left;
+		margin-left: 5%;
+	}
+	
+	input[type=checkbox] {
+		border: 0px;
+		width: 25px;
+		height: 2em;
+	}
+	
+	input[type=radio] {
+		border: 0px;
+		width: 25px;
+		height: 2em;
+	}
 }
 
 @media screen and (min-width: 1200px) {
@@ -107,6 +193,18 @@ summery {
 	
 	a.details.header {
 		text-align: center;
+	}
+	
+	form {
+		border: 2px solid black;
+		background-color: lightblue;
+		padding: 1rem 0rem 1rem 0rem;
+		text-align: left;
+		margin: auto;
+		border-radius: 10px;
+		width: 100%;
+		height: 25%;
+		font-size: 2rem;
 	}
 	
 	body {
@@ -128,5 +226,32 @@ summery {
 	ul {
 		font-size: 2rem;
 	}
+	
+	.name, .url, .email, .file, .subject, #message, #submitbtn  {
+		width: 90%;
+		margin-bottom: 0.5rem;
+		font-size: 2rem;
+		text-align: left;
+		margin-left: 5%;
+	}
+	
+	fieldset {
+		width: 90%;
+		margin-bottom: 0.5rem;
+		font-size: 2rem;
+		text-align: left;
+		margin-left: 5%;
+	}
 
+	input[type=checkbox] {
+		border: 0px;
+		width: 40px;
+		height: 2em;
+	}
+	
+	input[type=radio] {
+		border: 0px;
+		width: 40px;
+		height: 2em;
+	}
 }

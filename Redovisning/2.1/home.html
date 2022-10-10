@@ -55,20 +55,20 @@
 			<aside>
 				<form id="suggestion" method="post" enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php">
 
-					<label for="name">Name:</label><br>
-					<input type="text" id="name" name="name" placeholder="Name" autofocus list="names" required pattern="^[A-Za-zÀ-ÿ ,.'-]+$" title="Please enter your name"><br>
+					<label for="name" class="name">Name:</label><br>
+					<input type="text" id="name" name="name" class="name" placeholder="Name" autofocus list="names" required pattern="^[A-Za-zÀ-ÿ ,.'-]+$" title="Please enter your name"><br>
 					<datalist id="names">
 						<option value="Anonymous">
 					</datalist>
 					
-					<label for="email">Email:</label><br>
-					<input type="email" id="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Please enter your Email"><br>
+					<label for="email" class="email">Email:</label><br>
+					<input type="email" id="email" class="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Please enter your Email"><br>
 					
-					<label for="url">Your website:</label><br>
-					<input type="url" id="url" name="url" placeholder="URL" title="Please enter a URL to your website, e.g. Facebook/LinkedIn"><br>
+					<label for="url" class="url">Your website:</label><br>
+					<input type="url" id="url" class="url" name="url" placeholder="URL" title="Please enter a URL to your website, e.g. Facebook/LinkedIn"><br>
 					
-					<label for="subject">Subject</label><br>
-					<select id="subject" name="subject" form="suggestion" required>
+					<label for="subject" class="subject">Subject</label><br>
+					<select id="subject" class="subject" name="subject" form="suggestion" required>
 						<option value="bug">Bug report</option>
 						<option value="advice">Advice</option>
 						<option value="business">Business</option>
@@ -76,24 +76,22 @@
 					
 					<textarea id="message" name="message" rows="4" cols="50" placeholder="Your message" required></textarea><br>
 					
-					
-						<label for="file">File:</label><br>
-						<input type="file" id="file" name="file"><br>
-
+					<label for="file" class="file">File:</label><br>
+					<input type="file" id="file" class="file" name="file"><br>
 					
 					<fieldset>
 						<legend>Options:</legend>
-						
-								<label for="reply">Recive Reply:</label><br>
+								<label for="reply">Recive Reply:</label>
 								<input type="checkbox" id="wantReply" name="wantReply"><br>
 							
-								<label for="copy">Recive Copy:</label><br>
-								<input type="radio" id="wantCopyYes" name="wantCopy" value="Yes">
-								<label for="wantCopyYes">Yes</label><br>
-								<input type="radio" id="wantCopyNo" name="wantCopy" value="No" checked>
-								<label for="wantCopyNo">No</label><br>
+								<label for="copy" class="wantCopyYes">Recive Copy:</label>
+								<input type="radio" class="wantCopyYes" name="wantCopy" value="Yes">
+								<label for="wantCopyYes" class="wantCopyNo">Yes</label>
+								<input type="radio" class="wantCopyNo" name="wantCopy" value="No" checked>
+								<label for="wantCopyNo">No</label>
 					</fieldset><br>
-					<input type="submit"  value="Send">
+					
+					<input type="submit"  value="Send" id="submitbtn">
 				</form>
 			</aside>
 		</main>
