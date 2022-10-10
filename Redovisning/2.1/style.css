@@ -34,7 +34,6 @@ textarea {
     padding-right: 10px;
     padding-bottom: 20px;
     padding-left: 30px;
-	text-align: center;
 }
 
 #navUl {
@@ -53,4 +52,81 @@ summery {
 
 .footer {
 	background-color: lightblue;
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		background-color: blue;
+	}
+}
+
+@media screen and (min-width: 768px ) and (max-width: 1199px) {
+	body {
+		background-color: orange;
+    }
+  
+    header {
+		font-size: 1.5rem;
+		
+	}
+	
+	summery.details {
+		text-align: left;
+	}
+	
+	a.details.header {
+		text-align: center;
+	}
+	  
+	p {
+		font-size: 1.5rem;
+	}
+	  
+	h1 {
+	    font-size: 2rem;
+	}
+	  
+	h2 {
+		font-size: 3rem;
+	}
+	  
+	ul {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	header {
+		font-size: 2rem;
+		
+	}
+	
+	summery.details {
+		text-align: left;
+	}
+	
+	a.details.header {
+		text-align: center;
+	}
+	
+	body {
+		background-color: red;
+	}
+	  
+	p {
+		font-size: 2rem;
+	}
+	  
+	h1 {
+	    font-size: 3rem;
+	}
+	  
+	h2 {
+		font-size: 4rem;
+	}
+	  
+	ul {
+		font-size: 2rem;
+	}
+
 }
