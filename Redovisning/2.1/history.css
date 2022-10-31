@@ -30,13 +30,13 @@ aside {
 
 }
 	
-video {
-	order: 2;
+figure {
+	order: 1;
 	
 }
 
-figure {
-	order: 1;
+video {
+	order: 2;
 	
 }
 
@@ -81,16 +81,17 @@ audio {
 	}
 	
 	main {
-		width: max(100%, 1200px);
-		flex-direction: row;
+		width: max(100%, 800px);
+		flex-direction: column;
 	}
 	
 	main aside {
-		order: 2; /* 5. och ny ordning relativt till main */
+		order: 1; /* 5. och ny ordning relativt till main */
 	}
 	
 	main section {
-		order: 1;
+		width: max(80%, 1000px);
+		order: 2;
 	}
 	
 	#MediaSectionET {
