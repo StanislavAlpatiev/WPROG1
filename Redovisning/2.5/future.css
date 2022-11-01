@@ -1,0 +1,22 @@
+
+
+@media screen and (max-width: 767px) {
+	
+}
+	
+	
+	
+@media screen and (min-width: 768px ) and (max-width: 1199px) {
+	pre, blockquote {
+		font-size: 1.5rem;
+	}
+
+}
+		
+		
+@media screen and (min-width: 1200px) {
+	
+	pre, blockquote {
+		font-size: 2rem;
+	}
+}
