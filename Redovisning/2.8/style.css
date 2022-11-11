@@ -73,23 +73,40 @@ input[type=submit] {
 
 input[type=text], input[type="email"], input[type="url"] {
 	border: 3px solid black;
+	padding-left: 45px;
 }
 
-input[type=text]:focus, input[type="url"]:focus {
+input[type=text]:focus, input[type="email"]:focus, input[type="url"]:focus {
 	background-color: Bisque;
 	color: red;
 	box-sizing: border-box;
 }
 
 input[type="email"] {
+	/*background: url("email.png") no-repeat scroll 40px 40px;*/
 	background-image: url("email.png");
 	background-repeat: no-repeat;
-	background-position: 100px; 
-	background-size: 40px 40px;
+	background-position: 10px; 
+	background-size: 30px 30px;
+	background-attachment: scroll;
 }
 
-input[type="email"]:focus {
-	
+input[type="text"] {
+	/*background: url("email.png") no-repeat scroll 40px 40px;*/
+	background-image: url("name.png");
+	background-repeat: no-repeat;
+	background-position: 10px; 
+	background-size: 30px 30px;
+	background-attachment: scroll;
+}
+
+input[type="url"] {
+	/*background: url("email.png") no-repeat scroll 40px 40px;*/
+	background-image: url("web.png");
+	background-repeat: no-repeat;
+	background-position: 10px; 
+	background-size: 30px 30px;
+	background-attachment: scroll;
 }
 
 input, select, textarea {
