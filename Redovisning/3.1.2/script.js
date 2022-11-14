@@ -201,10 +201,12 @@ function removeSuccessfulRegistrationMessage() {
 	document.getElementById("timeField").innerHTML = '';
 }
 
+//Confirm method used to see that the input values in form are intentional
 function confirmFormValues() {
 	return confirm("Are these values correct? press OK to confirm");
 }
 
+//prompt to see that user is not a robot
 function notARobotPrompt() {
 	return prompt("Enter 'Harry Potter' to confirm you are not a Robot to continue.");
 }
