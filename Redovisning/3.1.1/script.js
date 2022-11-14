@@ -69,7 +69,6 @@ function emailCheck() {
 		} else {
 			//If email is not registered and follows the regex pattern toggle Boolean flag
 			document.getElementById("emailP").innerHTML = "";
-			document.getElementById("email").value = "";
 			validEmail = true;
 		}
 	} else {
@@ -123,8 +122,8 @@ function isFiledsEmpty() {
 	let fields = ["name", "age", "email", "password"];
 	let isFieldEmpty = false;
 	for(var i = 0; i < fields.length; i++) {
-		let fieldElement = document.getElementById(fields[i]).value;
-		if(fieldElement == "") {
+		let fieldElement = document.getElementById(fields[i]).value.isFieldEmpty;
+		if(fieldElement) {
 			document.getElementById(fields[i] + "P").innerHTML = "Please fill in this field.";
 			true;
 		}
