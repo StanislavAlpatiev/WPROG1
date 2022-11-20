@@ -1,12 +1,22 @@
-//Array containing dummy value for emails that are "registered" inside "database"
+//Array containing dummy value for emails that are "registered" inside "database".
 const emailsRegistered = ["test@gmail.com", "bob@gmail.com", "email@email.com"];
 
-//List with backgroudColors 
+//List with backgroudColors.
 const backgroudColorList = ["#F4F6F7", "#D98880", "#F1948A", "#C39BD3", "#BB8FCE", "#7FB3D5", "#5DADE2", "#76D7C4", "#73C6B6", "#52BE80", "#52BE80", "#F7DC6F", "#F8C471", "#F0B27A", "#E59866"];
-//Index for currentBackgroundColor
+
+//Index for currentBackgroundColor.
 let currentBackgroundColorIndex = 0;
 
-//this is an interval for flickering visibility
+//List of images used for SlideShow.
+const slidshowImgList = ["birds.jpg", "threebirds.jpg", "flowers.jpg", "housefront.jpg", "frenchGate.jpg"]; 
+
+//Index for currentSlideShowImage.
+let currentSlideShowImageIndex = 0;
+
+//this is an interval for slideShow
+const slideShowImageInterval = changeSlideShowImageInterval();
+
+//this is an interval for flickering visibility.
 const flickerSignUpMessageInterval = flickerSuccessFieldVisibility();
 
 
@@ -293,14 +303,27 @@ function checkKeyPressValue(e) {
 	}
 }
 
-//Shows user some usefull information about the page functionality when loading
+//Shows user some usefull information about the page functionality when loading.
 function onLoadFunction() {
 	alert("Press Up and Down Arrow Keys to Change Background Color!\nPress Esc to STOP this feature.");
 }
 
+//This function changes the image inside of slideShow
+function changeSlideShowImage(){
+	//Sets the src to current image according to asociated index variable
+    //$('#slideshow-img').attr('src', slidshowImgList[currentSlideShowImageIndex]);
+	document.getElementById("slideshow-img").src = slidshowImgList[currentSlideShowImageIndex];
+	//if statments for looping
+    currentSlideShowImageIndex = (currentSlideShowImageIndex < slidshowImgList.length - 1) ? currentSlideShowImageIndex + 1 : 0;
+}
+
+//Sets interval for slideShow
+function changeSlideShowImageInterval(){
+	return setInterval(changeSlideShowImage, 3000);
+}
+
 
 //Creating event listeners.
-
 //onsubmit event used to trigger isEmailRegisterd function when form is submitted.
 document.getElementById("registerForm").onsubmit = submitForm;
 document.getElementById("riskyButton").onclick = openWin;
@@ -309,6 +332,8 @@ document.getElementById("riskyButton").onmouseover = riskyButtonHoverIn;
 document.getElementById("riskyButton").onmouseout = riskyButtonHoverOut;
 document.addEventListener("keydown", checkKeyPressValue);
 document.body.onload = onLoadFunction;
+document.getElementById("slideshow-container").onmouseover = changeSlideShowImage;
+
 
 
 
