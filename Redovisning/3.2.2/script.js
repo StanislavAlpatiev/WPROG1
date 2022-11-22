@@ -339,6 +339,10 @@ $(document).ready(function(){
 		setPause(2000);
 		$("#slideshow-img").show("fast");
 	});
+	$("#toggleHideButton").click(function(){
+		setPause(2000);
+		$("#slideshow-img").toggle("slow");
+	});
 });
 
 //Jquery function used to add animate() to buttons for slideshow to resize it.
@@ -363,6 +367,41 @@ $(document).ready(function(){
 		setPause(2000);
 		$("#slideshow-img").animate({width: "100%"}, 2000, "swing");
 	});
+});
+
+//Jquery function used to controll slideshow fade on button clicks.
+$(document).ready(function(){
+	$("#fadeInButton").click(function(){
+		//Pauses the image change while animating slideshow.
+		//This makes animation smother so that image size does not change in the middle of it.
+		setPause(2000);
+		$("#slideshow-img").fadeIn("slow");
+	});
+	$("#fadeOutButton").click(function(){
+		//Pauses the image change while animating slideshow.
+		//This makes animation smother so that image size does not change in the middle of it.
+		setPause(2000);
+		$("#slideshow-img").fadeOut("slow");
+	});
+	$("#toggleFadeButton").click(function(){
+		//Pauses the image change while animating slideshow.
+		//This makes animation smother so that image size does not change in the middle of it.
+		setPause(2000);
+		$("#slideshow-img").fadeToggle("slow");
+	});
+	$("#fadeToNormalButton").click(function(){
+		//Pauses the image change while animating slideshow.
+		//This makes animation smother so that image size does not change in the middle of it.
+		setPause(2000);
+		$("#slideshow-img").fadeTo(1000, 1);
+	});
+	$("#fadeToDownButton").click(function(){
+		//Pauses the image change while animating slideshow.
+		//This makes animation smother so that image size does not change in the middle of it.
+		setPause(2000);
+		$("#slideshow-img").fadeTo(1000, 0.4);
+	});
+	
 });
 
 
