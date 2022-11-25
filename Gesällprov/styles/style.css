@@ -13,6 +13,11 @@ body {
 	background-image: linear-gradient(rgb(0, 76, 153), black);
 }
 
+#main-content-section {
+	display: flex;
+	flex-direction: column;
+}
+
 .imgbox {
 	background: url('../img/mistbackground.jpg') no-repeat center;
 	background-size: cover;
@@ -73,11 +78,10 @@ p {
 	overflow: hidden;
 	position: relative;
 	height: 900px;
-	width: 640px;
+	width: 600px;
 }
 
 #slider{
-	border: 20px solid #1C1D21;
 	height: 900px;
 	width: 600px;
 	overflow: hidden;
@@ -96,8 +100,7 @@ p {
 	height: 0px;
 	position: relative;
 	top: 50%;
-	width: 600px;
-	z-index: 1;
+	width: 100%;
 }
 
 #arrows i{
@@ -106,7 +109,7 @@ p {
 	cursor: pointer;
 	height: 30px;
 	padding: 15px;
-
+	border-radius: 50%;
 	transition: background-color .5s, color .5s;
 }
 
@@ -128,3 +131,33 @@ p {
 	src: url("../fonts/Hind-Bold.ttf");
 }
 
+@media screen and (max-width: 1024px) {
+	.vegitation-section {
+		flex-direction: column;
+	}
+	
+	#slideshow{
+		align-items: center;
+		display: flex;
+		grow: 3;
+		flex-direction: column;
+		justify-content: center;
+		overflow: hidden;
+		position: relative;
+		height: 900px;
+		width: 387px;
+	}
+
+	#slider{
+		height: 900px;
+		width: 600px;
+		overflow: hidden;
+	}
+
+	.slider-img {
+		width: 600px; 
+		height: 900px;
+		transition: all 1s;
+		z-index: 4;
+	}
+}
