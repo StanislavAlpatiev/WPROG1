@@ -13,6 +13,10 @@ body {
 	background-image: linear-gradient(rgb(0, 76, 153), black);
 }
 
+main {
+	padding-bottom: 10%;
+}
+
 #main-content-section {
 	display: flex;
 	flex-direction: column;
@@ -88,8 +92,8 @@ p {
 }
 
 .slider-img {
-	width: 600px; 
 	height: 900px;
+	width: 600px; 
 	transition: all 1s;
 	z-index: 4;
 }
@@ -126,6 +130,42 @@ p {
 	color: #EEEFF7;
 }
 
+.icon-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 5%;
+	height: 400px;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+.icon-subsection {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	justify-content: center;
+	align-items: baseline;
+	
+	margin: auto;
+}
+
+#co2-icon, #rain-icon, #forest-icon {
+	/*width: 230px;*/
+	width: 50%;
+}
+
+#co2-text, #rain-text, #forest-text {
+	font-size: 2rem;
+	text-align: center;
+}
+
+#co2-icon, #rain-icon, #forest-icon, #co2-text, #rain-text, #forest-text {
+	margin: auto;
+}
+
+
 @font-face {
 	font-family: "Hind-Bold";
 	src: url("../fonts/Hind-Bold.ttf");
@@ -144,12 +184,12 @@ p {
 		justify-content: center;
 		overflow: hidden;
 		position: relative;
-		height: 900px;
+		height: 600px;
 		width: 387px;
 	}
 
 	#slider{
-		height: 900px;
+		height: 600px;
 		width: 600px;
 		overflow: hidden;
 	}
@@ -160,4 +200,95 @@ p {
 		transition: all 1s;
 		z-index: 4;
 	}
+	
+	.icon-section {
+		flex-direction: column;
+		height: 1000px;
+	}
+
+	.icon-subsection {
+		width: 400px;
+	}
+
+	#co2-icon, #rain-icon, #forest-icon {
+		width: 230px;
+	}
+	
+}
+
+
+@media screen and (max-width: 767px) {
+	.vegitation-section {
+		flex-direction: column;
+	}
+	
+	#slideshow{
+		align-items: center;
+		display: flex;
+		grow: 3;
+		flex-direction: column;
+		justify-content: center;
+		overflow: hidden;
+		position: relative;
+		height: 627px;
+		width: 392px;
+	}
+
+	#slider{
+		height: 627px;
+		width: 392px;
+		overflow: hidden;
+	}
+
+	.slider-img {
+		height: 627px;
+		width: 392px; 
+		transition: all 1s;
+		z-index: 4;
+	}
+	
+	#morning {
+		content: url("../img/morning-small.jpg") no-repeat center;
+	}
+	
+	#stream {
+		content: url("../img/stream-small.jpg") no-repeat center;
+	}
+	
+	#waterfal {
+		content: url("../img/waterfal-small.jpg") no-repeat center;
+	}
+	
+	.icon-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: 1000px;
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 5%;
+	}
+
+	.icon-subsection {
+		display: flex;
+		flex-direction: column;
+		width: 400px;
+		justify-content: center;
+		align-items: baseline;
+		margin: auto;
+	}
+
+	#co2-icon, #rain-icon, #forest-icon {
+		width: 230px;
+	}
+
+	#co2-text, #rain-text, #forest-text {
+		font-size: 32px;
+		text-align: center;
+	}
+
+	#co2-icon, #rain-icon, #forest-icon, #co2-text, #rain-text, #forest-text {
+		margin: auto;
+	}
+	
 }
