@@ -95,6 +95,14 @@ p {
 	margin-bottom: 10%;
 }
 
+.show-read-more {
+	
+}
+
+.show-read-more .more-text{
+	display: none;
+}
+
 #vegitation-article {
 	display: flex;
 	flex-direction: column;
