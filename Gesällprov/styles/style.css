@@ -22,12 +22,17 @@ main {
 	flex-direction: column;
 }
 
+#main-content-section > h1 {
+	color: white;
+}
+
 .imgbox {
 	background: url('../img/mistbackground.jpg') no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 600px;
 	/*height: 100%;*/
+	width: 100%;
 	margin: auto;
 }
 
@@ -54,10 +59,11 @@ p {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	gap: 30px;
+	gap: 50px;
 	width: 80%;
 	margin: auto;
 	margin-top: 3%;
+	margin-bottom: 10%;
 }
 
 #vegitation-article {
@@ -176,29 +182,9 @@ p {
 		flex-direction: column;
 	}
 	
-	#slideshow{
-		align-items: center;
-		display: flex;
-		grow: 3;
-		flex-direction: column;
-		justify-content: center;
-		overflow: hidden;
-		position: relative;
-		height: 600px;
-		width: 387px;
-	}
-
-	#slider{
-		height: 600px;
-		width: 600px;
-		overflow: hidden;
-	}
-
-	.slider-img {
-		width: 600px; 
+	#slideshow, #slider, .slider-img {
 		height: 900px;
-		transition: all 1s;
-		z-index: 4;
+		width: 100%;
 	}
 	
 	.icon-section {
@@ -221,32 +207,12 @@ p {
 	.vegitation-section {
 		flex-direction: column;
 	}
-	
-	#slideshow{
-		align-items: center;
-		display: flex;
-		grow: 3;
-		flex-direction: column;
-		justify-content: center;
-		overflow: hidden;
-		position: relative;
+
+	#slideshow, #slider, .slider-img {
 		height: 627px;
-		width: 392px;
+		width: 100%;
 	}
 
-	#slider{
-		height: 627px;
-		width: 392px;
-		overflow: hidden;
-	}
-
-	.slider-img {
-		height: 627px;
-		width: 392px; 
-		transition: all 1s;
-		z-index: 4;
-	}
-	
 	#morning {
 		content: url("../img/morning-small.jpg") no-repeat center;
 	}
@@ -260,35 +226,15 @@ p {
 	}
 	
 	.icon-section {
-		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
 		height: 1000px;
-		width: 80%;
-		margin: 0 auto;
-		margin-top: 5%;
-	}
-
-	.icon-subsection {
-		display: flex;
-		flex-direction: column;
-		width: 400px;
-		justify-content: center;
-		align-items: baseline;
-		margin: auto;
 	}
 
 	#co2-icon, #rain-icon, #forest-icon {
-		width: 230px;
+		width: 180px;
 	}
 
 	#co2-text, #rain-text, #forest-text {
-		font-size: 32px;
-		text-align: center;
+		font-size: 1.5rem;
 	}
-
-	#co2-icon, #rain-icon, #forest-icon, #co2-text, #rain-text, #forest-text {
-		margin: auto;
-	}
-	
 }
