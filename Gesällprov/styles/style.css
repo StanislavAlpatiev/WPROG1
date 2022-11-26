@@ -115,12 +115,11 @@ p {
 #slideshow {
 	align-items: center;
 	display: flex;
-	grow: 3;
 	flex-direction: column;
 	justify-content: center;
 	overflow: hidden;
 	position: relative;
-	height: 900px;
+	height: 70vh;
 	width: 600px;
 }
 
@@ -216,7 +215,7 @@ p {
 	}
 	
 	#slideshow, #slider, .slider-img {
-		height: 900px;
+		height: 70vh;
 		width: 100%;
 	}
 	
@@ -242,7 +241,7 @@ p {
 	}
 
 	#slideshow, #slider, .slider-img {
-		height: 627px;
+		height: 70vh;
 		width: 100%;
 	}
 
