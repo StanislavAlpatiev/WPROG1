@@ -36,3 +36,39 @@ $(document).ready(function() {
 		$(this).remove();
 	});
 });
+
+//Function that makes hamburger menu toggle content on click.
+$(document).ready(function() {
+	//Stor DOMElements in variables.
+	let hamburger = document.getElementById("hamburger");
+	let navlist = document.getElementById("nav-ul");
+	
+	//Removes show class from navlist when screen width is greater then 1024px.
+	//This makes it so that is hamburger menu was open and you make window larger so that it disapears.
+	//That is you again make window smaller that the hamburger menu is closed.
+	$(window).resize(function() {
+		if (window.innerWidth > 1024) {
+			$(navlist).removeClass("show");
+		}
+	});
+	
+	//Toggle hamburger menu on click.
+	hamburger.addEventListener("click", function() {
+		navlist.classList.toggle("show");
+	});
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

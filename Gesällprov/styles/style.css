@@ -13,21 +13,45 @@ body {
 	background-image: linear-gradient(rgb(0, 76, 153), black);
 }
 
+/*
+Navbar-section
+*/
+
+#hamburger {
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 50px;
+	border: 10px;
+	cursor: pointer; 
+	display: none;
+	margin-right: 2rem;
+}
+
+#hamburger:focus {
+	outline: none;
+}
+
 .header nav {
-	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
 	top: 0;
 	width: 100%;
+	height: fit-content;
 	z-index: 1000;
 	transition: 0.3s;
+	background-color: rgb(56,56,56);
 }
 
 ul {
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 	box-sizing: border-box;
 	padding: 10px;
-	background-color: rgb(56,56,56);
 }
 
 li {
@@ -56,6 +80,9 @@ main {
 }
 
 .imgbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background: url('../img/mistbackground.jpg') no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -71,18 +98,17 @@ main {
 	margin: auto;
 }
 
+#page-title {
+	font-size: 45px;
+	text-decoration: none;
+	/*font-family: 'Hind-Bold';*/
+}
+
 p {
 	font-size: 24px;
 	color: white;
 }
 
-#page-title {
-	text-align: center;
-    top: 50%;
-    position: relative;
-	font-size: 45px;
-	/*font-family: 'Hind-Bold';*/
-}
 
 #vegitation-section {
 	display: flex;
@@ -120,7 +146,7 @@ p {
 	overflow: hidden;
 	position: relative;
 	height: 70vh;
-	width: 600px;
+	width: 50%;
 }
 
 #slider {
@@ -212,7 +238,35 @@ p {
 	src: url("../fonts/Hind-Bold.ttf");
 }
 
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 @media screen and (max-width: 1024px) {
+	
+	.header nav {
+		flex-wrap: wrap;
+	}
+	
+	.nav-ul {
+		display: none;
+	}
+	
+	.nav-ul.show {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#hamburger {
+		display: block;
+	}
+	
 	#vegitation-section {
 		flex-direction: column;
 	}
@@ -256,6 +310,7 @@ p {
 
 
 @media screen and (max-width: 767px) {
+	
 	#vegitation-section {
 		flex-direction: column;
 	}
@@ -291,3 +346,5 @@ p {
 		width: 80vw;
 	}
 }
+
+
