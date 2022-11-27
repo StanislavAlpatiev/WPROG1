@@ -110,7 +110,7 @@ p {
 }
 
 
-#vegitation-section {
+#vegetation-section {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -125,14 +125,14 @@ p {
 	display: none;
 }
 
-#vegitation-article {
+#vegetation-article {
 	display: flex;
 	flex-direction: column;
 	/*width: 45%;*/
 	flex-shrink: 30;
 }
 
-#vegitation-title {
+#vegetation-title {
 	font-size: 60px;
 	color: white;
 	margin-bottom: 2%;
@@ -267,7 +267,7 @@ p {
 		display: block;
 	}
 	
-	#vegitation-section {
+	#vegetation-section {
 		flex-direction: column;
 	}
 	
@@ -311,7 +311,7 @@ p {
 
 @media screen and (max-width: 767px) {
 	
-	#vegitation-section {
+	#vegetation-section {
 		flex-direction: column;
 	}
 

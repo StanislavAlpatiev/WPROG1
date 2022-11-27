@@ -20,7 +20,7 @@ $(document).ready(function() {
 			//Amount of text to show.
 			let newArticleTextToDisplay = articleText.substring(0, maxLength);
 			//Var storing text that does not fitt withing maxLength.
-			let removedStr = articleText.substring(maxLength, $.trim(articleText).length);
+			let removedStr = articleText.substring(maxLength, articleText.length);
 			//Resets the paragraph content with text that fits maxLength.
 			$(this).empty().html(newArticleTextToDisplay);
 			//Adds read more... link.
