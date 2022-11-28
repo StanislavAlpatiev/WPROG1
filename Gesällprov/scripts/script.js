@@ -26,24 +26,21 @@ $(document).ready(function() {
 			//Adds read more... link.
 			$(this).append('<a href="javascript:void(0);" class="read-more" style="color: white;">...read more</a>');
 			//Adds span containing text that did not fitt maxLength.
-			$(this).append('<p class="more-text" style="display: none;">' + removedStr + '</p>');
+			$("#vegetation-article").append('<p class="more-text" style="display: none;">' + removedStr + '</p>');
 			//Adds read less... link.
-			$(".more-text").append('<a href="javascript:void(0);" class="read-less" style="color: white; display: none;">read less</a>');
+			$(".more-text").append('<a href="javascript:void(0);" class="read-less" style="color: white;">read less</a>');
 		}
 	});
-	//Function that unwraps text when read more... link is clicked. 
-	//Removes read more... link afterwards.
+	//Function that unwraps text when ...read more link is clicked. 
+	//Hide read more... link afterwards.
 	$(".read-more").click(function() {
-		$(this).siblings(".more-text").show();
 		$(this).hide();
-		$(".read-less").show();
-		
+		$(".more-text").show();
 	});
-	//Function that unwraps text when read more... link is clicked. 
-	//Removes read more... link afterwards.
+	//Function that removes text when read less link is clicked. 
+	//Showes read more... linked afterwards.
 	$(".read-less").click(function() {
 		$(".more-text").hide();
-		$(this).hide();
 		$(".read-more").show();
 	});
 	
