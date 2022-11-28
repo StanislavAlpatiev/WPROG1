@@ -24,17 +24,29 @@ $(document).ready(function() {
 			//Resets the paragraph content with text that fits maxLength.
 			$(this).empty().html(newArticleTextToDisplay);
 			//Adds read more... link.
-			$(this).append('<a href="javascript:void(0);" class="read-more" style="color: white;">read more...</a>');
+			$(this).append('<a href="javascript:void(0);" class="read-more" style="color: white;">...read more</a>');
 			//Adds span containing text that did not fitt maxLength.
-			$(this).append('<span class="more-text">' + removedStr + '</span>');
+			$(this).append('<p class="more-text" style="display: none;">' + removedStr + '</p>');
+			//Adds read less... link.
+			$(".more-text").append('<a href="javascript:void(0);" class="read-less" style="color: white; display: none;">read less</a>');
 		}
 	});
 	//Function that unwraps text when read more... link is clicked. 
 	//Removes read more... link afterwards.
 	$(".read-more").click(function() {
-		$(this).siblings(".more-text").contents().unwrap();
-		$(this).remove();
+		$(this).siblings(".more-text").show();
+		$(this).hide();
+		$(".read-less").show();
+		
 	});
+	//Function that unwraps text when read more... link is clicked. 
+	//Removes read more... link afterwards.
+	$(".read-less").click(function() {
+		$(".more-text").hide();
+		$(this).hide();
+		$(".read-more").show();
+	});
+	
 });
 
 //Function that makes hamburger menu toggle content on click.
