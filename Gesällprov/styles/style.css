@@ -239,7 +239,7 @@ p {
 	width: 60%;
 }
 
-#co2-text, #rain-text, #forest-text {
+.icon-text {
 	font-size: 2rem;
 	text-align: center;
 }
@@ -309,6 +309,17 @@ p {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+@media screen and (max-width: 1500px) {
+	#vegetation-section {
+		flex-direction: column;
+	}
+	
+	#slideshow, #slider, .slider-img {
+		height: 70vh;
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 1024px) {
 	
 	.header nav {
@@ -367,6 +378,11 @@ p {
 		width: 280px;
 	}
 	
+	.icon-text {
+		width: 50vw;
+		height: fit-content;
+	}
+	
 	#co2-icon, #rain-icon, #forest-icon, #co2-text, #rain-text, #forest-text {
 		margin: 2rem;
 	}
@@ -409,10 +425,10 @@ p {
 	.icon-img:hover {
 		width: 230px;
 	}
-
-	#co2-text, #rain-text, #forest-text {
-		font-size: 1.5rem;
-		width: 80vw;
+	
+	.icon-text {
+		font-size: 1.7rem;
+		width: 70vw;
 	}
 }
 
