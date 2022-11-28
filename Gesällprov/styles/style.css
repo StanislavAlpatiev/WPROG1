@@ -42,7 +42,7 @@ Navbar-section
 	height: fit-content;
 	z-index: 1000;
 	transition: 0.3s;
-	background-color: rgb(56,56,56);
+	background-color: rgb(39, 39, 39);
 }
 
 ul {
@@ -63,6 +63,10 @@ li {
 
 li a {
 	text-decoration: none;
+	color: rgb(90, 90, 90);;
+}
+
+li a:hover {
 	color: white;
 }
 
@@ -101,6 +105,7 @@ main {
 #page-title {
 	font-size: 45px;
 	text-decoration: none;
+	text-align: center;
 	/*font-family: 'Hind-Bold';*/
 }
 
@@ -218,10 +223,12 @@ p {
 	margin: auto;
 }
 
-#co2-icon, #rain-icon, #forest-icon {
-	/*width: 230px;*/
+.icon-img {
 	width: 50%;
+}
 
+.icon-img:hover {
+	width: 60%;
 }
 
 #co2-text, #rain-text, #forest-text {
@@ -232,6 +239,45 @@ p {
 #co2-icon, #rain-icon, #forest-icon, #co2-text, #rain-text, #forest-text {
 	margin: 1rem;
 }
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: fit-content;
+	width: 100%;
+	background-color: rgb(39, 39, 39);
+	padding: 50px 0px;
+}
+
+.footer-section {
+	display: flex;
+	flex-direction: column;
+	height: fit-content;
+	width: 80%;
+	margin: auto;
+}
+
+.footer-section p {
+	font-size: 3rem;
+}
+
+.footer-section a {
+    all: unset;
+}
+
+.footer-section i {
+	margin: 20px 0px;
+	width: 100%;
+	font-size: 2rem;
+	cursor: pointer;
+	color: rgb(90, 90, 90);
+}
+
+.footer-section i:hover {
+	color: white;
+}
+
 
 @font-face {
 	font-family: "Hind-Bold";
@@ -298,8 +344,12 @@ p {
 		width: 100vw;
 	}
 
-	#co2-icon, #rain-icon, #forest-icon {
+	.icon-img {
 		width: 230px;
+	}
+	
+	.icon-img:hover {
+		width: 280px;
 	}
 	
 	#co2-icon, #rain-icon, #forest-icon, #co2-text, #rain-text, #forest-text {
@@ -337,8 +387,12 @@ p {
 		height: fit-content;
 	}
 
-	#co2-icon, #rain-icon, #forest-icon {
+	.icon-img {
 		width: 180px;
+	}
+	
+	.icon-img:hover {
+		width: 230px;
 	}
 
 	#co2-text, #rain-text, #forest-text {
