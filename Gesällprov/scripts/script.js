@@ -10,7 +10,7 @@ $("#prev").click(function() {
 //If link is clicked it expands the amount of text to be displayed.
 $(document).ready(function() {
 	//This is the max length of text to be displayed before read more is displayed.
-	let maxLength = 600;
+	let maxLength = 520;
 	//Function targeting the paragraph that has read more functionality.
 	$(".show-read-more").each(function(){
 		//Variable storing the paragraph text.
@@ -24,7 +24,7 @@ $(document).ready(function() {
 			//Resets the paragraph content with text that fits maxLength.
 			$(this).empty().html(newArticleTextToDisplay);
 			//Adds read more... link.
-			$(this).append('<a href="javascript:void(0);" class="read-more" style="color: white;">...read more</a>');
+			$(this).append('<a href="javascript:void(0);" class="read-more" style="color: white;"> ...read more</a>');
 			//Adds span containing text that did not fitt maxLength.
 			$("#vegetation-article").append('<p class="more-text" style="display: none;">' + removedStr + '</p>');
 			//Adds read less... link.
