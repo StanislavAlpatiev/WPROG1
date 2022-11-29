@@ -133,8 +133,10 @@ p {
 	margin-bottom: 10%;
 }
 
-.show-read-more .more-text{
-	display: none;
+#vegetation-title {
+	font-size: 60px;
+	color: rgb(243, 241, 239);
+	margin-bottom: 2%;
 }
 
 #vegetation-article {
@@ -144,10 +146,19 @@ p {
 	flex-shrink: 30;
 }
 
-#vegetation-title {
-	font-size: 60px;
-	color: white;
-	margin-bottom: 2%;
+.more-text {
+	display: none;
+}
+
+.more-text-show {
+	display: inline;
+}
+
+.read-more-less {
+	color: rgb(243, 241, 239);
+	font-size: 1.5rem;
+	cursor: pointer;
+	margin-top: 10px;
 }
 
 #slideshow {
