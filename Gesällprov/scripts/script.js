@@ -43,7 +43,34 @@ $(document).ready(function() {
 	});
 });
 
-
+//This function animates the page title.
+$(document).ready(function() {
+	//Stor page title in variable.
+	let pageTitle = $('#page-title');
+	
+	//Stor page title letters in array.
+	let pageTitleLetters = $('#page-title').text().split("");
+	
+	//Clear the page title text.
+	$('#page-title').text("");
+	
+	//Iterate over the page title letters in array.
+	$.each(pageTitleLetters, function(idx, elem) {
+		//Create a span for each letter with opacity 0.
+		//This makes the letter invisible at first.
+		let pageTitleLetter = $("<span/>").text(elem).css({
+			opacity: 0
+		});
+		//Append span with letter to page title.
+		pageTitle.append(pageTitleLetter);
+		//Set delay for animation.
+		pageTitleLetter.delay(idx * 70);
+		//Animate the opacity back to full(1) in 1.1 seconds.
+		pageTitleLetter.animate({
+			opacity: 1
+		}, 1100);
+	});
+});
 
 
 
