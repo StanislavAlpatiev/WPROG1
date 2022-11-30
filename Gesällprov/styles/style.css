@@ -255,6 +255,60 @@ p {
 	margin: 1rem;
 }
 
+.threats-section {
+	display: flex; 
+	flex-direction: row;
+	width: 80vw;
+	height: 1000px;
+	background-color: white;
+	margin: auto;
+}
+
+.threats-section-img {
+	height: 100%;
+	width: 50%;
+	background-color: red;
+}
+
+.threats-section-article {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 900px;
+	width: 50vw;
+	border-radius: 40px;
+}
+
+.threats-section-article-ul {
+	display: flex;
+	align-items: stretch;
+	width: 80%;
+}
+
+.threats-section-article-ul li{
+	border: 1px solid black;
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	font-size: 2rem;
+	text-align: center;
+	padding: 10px 0px;
+}
+
+.threats-section-article-subsection {
+	background-color: blue;
+	height: 90%;
+	width: 80%;
+	margin: auto;
+}
+
+.threats-section-article-subsection p {
+	color: white;
+}
+
+
+
 .footer {
 	display: flex;
 	flex-direction: row;

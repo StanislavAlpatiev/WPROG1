@@ -68,7 +68,9 @@ $(document).ready(function() {
 	});
 });
 
-
+$(document).ready(function() {
+	$(".threats-section-article").tabs();
+});
 
 
 
