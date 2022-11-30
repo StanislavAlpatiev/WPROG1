@@ -69,7 +69,7 @@ li {
 
 li a {
 	text-decoration: none;
-	color: rgb(90, 90, 90);;
+	color: rgb(90, 90, 90);
 }
 
 li a:hover {
@@ -227,6 +227,7 @@ p {
 	height: 400px;
 	width: 80vw;
 	margin: 0 auto;
+	margin-bottom: 10%;
 }
 
 .icon-subsection {
@@ -255,19 +256,19 @@ p {
 	margin: 1rem;
 }
 
-.threats-section {
-	display: flex; 
-	flex-direction: row;
-	width: 80vw;
-	height: 1000px;
-	background-color: white;
-	margin: auto;
+
+#threats-section-title {
+	font-size: 3rem;
+	color: rgb(243, 241, 239);
+	text-align: center;
 }
 
-.threats-section-img {
-	height: 100%;
-	width: 50%;
-	background-color: red;
+.threats-section {
+	display: flex; 
+	flex-direction: column;
+	width: 80%;
+	height: fit-content;
+	margin: auto;
 }
 
 .threats-section-article {
@@ -275,38 +276,92 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 900px;
-	width: 50vw;
+	height: 100%;
+	width: 100%;
 	border-radius: 40px;
 }
 
 .threats-section-article-ul {
 	display: flex;
 	align-items: stretch;
-	width: 80%;
+	width: 100%;
+	height: fit-content;
+	padding: 0;
+	list-style: o=none;
+	justify-content: flex-end;
 }
 
-.threats-section-article-ul li{
-	border: 1px solid black;
-	width: 100%;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	font-size: 2rem;
+.threats-section-article-ul li {
+	display: inline-block;
+	width: fit-content;
+	border-radius: 20px 20px 0px 0px;
+	font-size: 16px;
 	text-align: center;
-	padding: 10px 0px;
+	padding: 10px;
+	margin-left: 0;
+	background-color: rgba(28,29,33, .75);
+	margin: 0px 0px 0px 10px;
+}
+
+.threats-section-tab-article {
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(28,29,33, .75);
+	height: fit-content;
+	width: 100%;
+	padding: 20px 0px;
+	border-radius: 40px 0px 40px 40px;
+}
+
+.threats-section-img-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: fit-content;
+	width: 50%;
+	border-radius: 40px 0px 0px 40px;
+}
+
+.threats-section-img {
+	height: 100%;
+	/*width: 95%;*/
+	border-radius: 40px;
+	width: 95%; 
+	object-fit: contain;
+}
+
+#threats-article-text {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 50%;
 }
 
 .threats-section-article-subsection {
-	background-color: blue;
-	height: 90%;
-	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+.threats-section-article-subsection h1 { 
+	font-size: 2rem;
+	text-align: left;
+	color: rgb(243, 241, 239);
+	width: 90%;
 	margin: auto;
+	margin-bottom: 1rem;
 }
 
 .threats-section-article-subsection p {
-	color: white;
+	height: 100%;
+	width: 90%;
+	margin: auto;
 }
 
+.ui-tabs-active a {
+	color: rgb(243, 241, 239);
+}
 
 
 .footer {
@@ -379,6 +434,26 @@ p {
 		height: 70vh;
 		width: 100%;
 	}
+	
+	.threats-section-tab-article {
+		flex-direction: column;
+	}
+	
+	.threats-section-img-container {
+		height: fit-content;
+		width: 95%;
+		margin: auto;
+	}
+	
+	.threats-section-img {
+		height: 100%;
+		width: 100%; 
+		object-fit: contain;
+	}
+
+	#threats-article-text {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 1024px) {
@@ -447,7 +522,6 @@ p {
 	#co2-icon, #rain-icon, #forest-icon, #co2-text, #rain-text, #forest-text {
 		margin: 2rem;
 	}
-	
 }
 
 

@@ -70,6 +70,19 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$(".threats-section-article").tabs();
+	
+	$(".threats-section-article").click(function() {
+		// Getter
+		let activeTab = $( ".threats-section-article" ).tabs( "option", "active" );
+		console.log(activeTab);
+		if(activeTab == 0) {
+			$(".threats-section-img").attr("src","img/deforestation.jpg"); 
+		} else if(activeTab == 1) {
+			$(".threats-section-img").attr("src","img/forest-fire.jpg"); 
+		} else {
+			$(".threats-section-img").attr("src","img/illegal-mining.jpg"); 
+		}
+	});
 });
 
 
