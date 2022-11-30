@@ -13,12 +13,8 @@ $(document).ready(function() {
 	//Hide read more... link afterwards.
 	$(".read-more-less").click(function() {
 		let buttonText = $(this).text();
-		$(".more-text").toggleClass('more-text-show');
-		if(buttonText == "Read more...") {
-			$(this).text("Read less.");
-		} else {
-			$(this).text("Read more...");
-		}
+		$('.more-text').slideToggle(300);
+		$(this).text(buttonText == "Read more..." ? "Read less..." : "Read more...");
 	});
 });
 
