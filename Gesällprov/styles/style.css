@@ -299,7 +299,7 @@ p {
 	text-align: center;
 	padding: 10px;
 	margin-left: 0;
-	background-color: rgb(39, 39, 39);
+	background-color: rgb(50, 50, 50);
 	margin: 0px 0px 0px 10px;
 }
 
@@ -357,6 +357,10 @@ p {
 	height: 100%;
 	width: 90%;
 	margin: auto;
+}
+
+.threats-section-article-ul .ui-tabs-active {
+	background-color: rgb(39, 39, 39);
 }
 
 .ui-tabs-active a {
