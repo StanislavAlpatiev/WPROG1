@@ -1,3 +1,67 @@
+#main-content-section {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	width: 80%;
+	margin: auto;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+.formCountainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	height: fit-content;
+	padding: 30px;
+	background-color: rgb(39, 39, 39);
+	border-radius: 40px;
+}
+
+#commentForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+	width: 600px;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+input, label, select, textarea {
+    display:block;
+	height: fit-content;
+	padding: 10px;
+}
+
+label {
+	font-size: 2rem;
+	color: rgb(243, 241, 239);
+}
+
+input, select {
+	font-size: 1.3rem;
+} 
+
+textarea {
+	height: 200px;
+	outline: none;
+	resize: none;
+	overflow: auto;
+	font-size: 1.3rem;
+	padding: 10px;
+}
+
+#otherTopic-error, #name-error, #email-error, #url-error, #comment-error {
+	font-size: 1.3rem;
+	color: red;
+}
 
 @media screen and (max-width: 1500px) {
 	
@@ -5,11 +69,56 @@
 
 @media screen and (max-width: 1024px) {
 	
-	
 }
 
 
 @media screen and (max-width: 767px) {
+	#main-content-section {
+		display: flex;
+		flex-direction: column;
+
+		align-items: center;
+		width: 80%;
+		margin: auto;
+	}
 	
-	
+	.formCountainer {
+		width: 90%;
+	}
+
+	#commentForm {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: right;
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	input, label, select, textarea {
+		display:block;
+		height: fit-content;
+		padding: 10px;
+	}
+
+	label {
+		font-size: 2rem;
+		color: rgb(243, 241, 239);
+	}
+
+	input, select {
+		font-size: 1.3rem;
+	} 
+
+	textarea {
+		height: 200px;
+		outline: none;
+		resize: none;
+		overflow: auto;
+		font-size: 1.3rem;
+		padding: 10px;
+	}
 }
