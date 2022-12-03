@@ -47,6 +47,7 @@ label {
 
 input, select {
 	font-size: 1.3rem;
+	background-color: rgb(243, 241, 239);
 } 
 
 textarea {
@@ -56,6 +57,15 @@ textarea {
 	overflow: auto;
 	font-size: 1.3rem;
 	padding: 10px;
+	background-color: rgb(243, 241, 239);
+}
+
+input[type=submit] {
+	margin-top: 10px;
+}
+
+#otherTopic {
+	margin-top: 10px;
 }
 
 #otherTopic-error, #name-error, #email-error, #url-error, #comment-error {
