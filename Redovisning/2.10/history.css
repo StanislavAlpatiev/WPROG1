@@ -1,0 +1,128 @@
+/*#rightHalf {
+	float: right;
+}*/
+
+main {
+	display: flex;
+	flex-flow: row wrap;
+	flex-direction: column;
+	justify-content: center;
+}
+
+table {
+	border: 2px solid black;
+	margin: auto;
+	table-layout: auto;
+	border-spacing: 10px;
+}
+
+header {
+	flex: 1 100%; /* 1. vi anger först att header ska vara 100% bred så att "row wrap" tvingar nästa sak på sin egna rad. Width: 100% funkar sämre för mig. */
+}
+
+section {
+	flex: 25 0px; /* 2. några saker ska vara på samma rad, t.ex ska denna ta upp "25" av raden */
+	align-items: center;
+}
+
+aside {
+	flex: 1; /* 3. och denna ska ta upp "1" av raden. */
+	align-items: baseline;
+	justify-content: center;
+}
+	
+figure {
+	order: 1;
+}
+
+video {
+	order: 2;	
+}
+
+audio {
+	order: 3;	
+}
+
+#smallStanislav {
+	transition-duration: 2s;
+	cursor: pointer;
+}
+
+#smallStanislav:hover {
+	transform: rotate(360deg);
+}
+
+#MediaSectionET {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#IMGParrot {
+	width: 30%;
+	height: 10%;
+	transition: width 2s, height 4s;
+	cursor: pointer;
+}
+
+#IMGParrot:hover {
+	width: 40%;
+	height: 20%;
+}
+
+
+@media screen and (max-width: 767px) {
+	#smallStanislav {
+		width: 200px; 
+		height: 250px;
+	}
+	
+	#mediaSectionVideo {
+		width: 80%;
+		height: 100%;
+	}
+	
+	#mediaSectionIMG {
+		width: 100%;
+		height: 100%;
+	}
+}
+	
+@media screen and (min-width: 768px ) and (max-width: 1199px) {
+	#smallStanislav {
+		width: 300px; 
+		height: 375px;
+	}
+}
+		
+		
+@media screen and (min-width: 1200px) {
+	table {
+		font-size: 1.5rem;
+		/*margin: 0rem 1rem 1rem 3rem;*/
+	}
+	
+	#smallStanislav {
+		
+	}
+	
+	main aside {
+		order: 1; /* 5. och ny ordning relativt till main */
+	}
+	
+	main section {
+		width: max(80%, 1000px);
+		order: 2;
+	}
+	
+	#mediaSectionVideo {
+		width: 80%;
+		height: 100%;
+	}
+	
+	#mediaSectionIMG {
+		width: 800px;
+		height: 450px;
+	}
+}
