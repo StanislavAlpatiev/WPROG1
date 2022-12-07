@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="aplication-name" content="Stanislav.html">
+		<meta name="author" content="Stanislav Alpatiev">
+		<meta name="description" content="Front page of website">
+		<meta name="generator" content="Notepad++ v8.4.2">
+		<meta name="keywords" content="Home, FrontPage, Main Page">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="home.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	</head>
+	<title> Home </title>
+	<body>
+		<header class="header">	
+			<details>
+				<summary>Navigation</summary>
+				<nav>
+					<a href="home.html">Home</a></li>
+					<a href="history.html">History</a></li>
+					<a href="now.html">Now</a></li>
+					<a href="future.html">Future</a></li>
+				</nav>				
+			</details>
+		</header>
+		<main>
+			<section>			
+				<article>
+					<blockquote></blockquote>
+					<h2>Welcome!</h2>
+					<h1>Project Purpose</h1>
+					<p>
+						This website is an assignment for the course <b>WPROG1</b>.
+						<br> 
+						The purpose of this website is to be a showcase as well as a learning platform for <mark><b>HTML</b></mark> as well as <mark><b>CSS</b></mark>.<br>
+						This website is devided into 4 separate webpages that can be reached through the navbar.
+					</p>
+						<ul>
+							<li>Home</li>
+							<li>History</li>
+							<li>Now</li>
+							<li>Future</li>
+						</ul>
+					<p>
+						The "History" page is going to go over my history growing up.<br>
+						The "Now" page is going to explain my current occupation among other things.<br>
+						And the "Future" page will contain my future expectation.
+					</p>
+					<pre></pre>
+				</article>				
+			</section>			
+			<aside>
+				<form id="suggestion" method="post" enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php">
+
+					<label for="name" class="name">Name:</label><br>
+					<input type="text" id="name" name="name" class="name" placeholder="Name" autofocus list="names" required pattern="^[A-Za-zÀ-ÿ ,.'-]+$" title="Please enter your name"><br>
+					<datalist id="names">
+						<option value="Anonymous">
+					</datalist>
+					
+					
+					<label for="email" class="email">Email:</label><br>
+					<input type="email" id="email" class="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Please enter your Email"><br>
+					
+					
+					<label for="url" class="url">Your website:</label><br>
+					<input type="url" id="url" class="url" name="url" placeholder="URL" title="Please enter a URL to your website, e.g. Facebook/LinkedIn"><br>
+					
+					
+					<label for="subject" class="subject">Subject</label><br>
+					<select id="subject" class="subject" name="subject" form="suggestion" required>
+						<option value="bug">Bug report</option>
+						<option value="advice">Advice</option>
+						<option value="business">Business</option>
+					</select><br>
+					
+					<textarea id="message" name="message" rows="4" cols="50" placeholder="Your message" required></textarea><br>
+					
+					<label for="file" class="file">File:</label><br>
+					<input type="file" id="file" class="file" name="file"><br>
+					
+					<fieldset>
+						<legend>Options:</legend>
+								<label for="reply">Recive Reply:</label>
+								<input type="checkbox" id="wantReply" name="wantReply"><br>
+							
+								<label for="copy" class="wantCopyYes">Recive Copy:</label>
+								<input type="radio" class="wantCopyYes" name="wantCopy" value="Yes">
+								<label for="wantCopyYes" class="wantCopyNo">Yes</label>
+								<input type="radio" class="wantCopyNo" name="wantCopy" value="No" checked>
+								<label for="wantCopyNo">No</label>
+					</fieldset><br>
+					
+					<input type="submit"  value="Send" id="submitbtn">
+				</form>
+			</aside>
+		</main>
+		<footer class="footer">
+				<p>Contact Me:<p>
+				<a href="https://mail.google.com/mail/?view=cm&fs=1&to=stal5991@student.su.se" id="emailLink">
+					stal5991@student.su.se
+				</a>
+		</footer>
+	</body>
+</html>
+
