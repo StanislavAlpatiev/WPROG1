@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="aplication-name" content="Stanislav.html">
+		<meta name="author" content="Stanislav Alpatiev">
+		<meta name="description" content="Feedback page of website">
+		<meta name="generator" content="Notepad++ v8.4.2">
+		<meta name="keywords" content="FeedbackPage, FrontPage, Main Page">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--<link rel="stylesheet" href="home.css">-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+		<script type="text/javascript" src="scripts/feedback.js" defer></script>
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="styles/feedback.css">
+		<script src="https://kit.fontawesome.com/82afea7823.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<title>Feedback</title>
+	
+	<body>
+		<header class="header">
+		</header>
+		<main>
+			<section id="main-content-section">
+				<h1>This page is for you to contact us</h1>
+				<section class="formCountainer">
+					<form class="cmxform" id="commentForm" method="get" action="">
+							
+						<label for="select-native-2">Topic</label>
+						<select name="select-native-2" id="select-native-2">
+						    <option value="bug">Bug report</option>
+						    <option value="feature">Feature suggestion</option>
+						    <option value="other">Other</option>
+						</select>
+						
+
+						<input id="otherTopic" name="otherTopic" type="text" placeholder="Other topic">
+						
+						<label for="name">Name</label>
+						<input id="name" name="name" minlength="2" type="text" placeholder="Your name">
+
+						<label for="email">E-Mail</label>
+						<input id="email" type="email" name="email" placeholder="bob@example.com">
+
+						<label for="url">URL</label>
+						<input id="url" type="url" name="url" placeholder="https://example.com/">
+
+						<label for="comment">Your comment</label>
+						<textarea id="comment" name="comment" placeholder="Message"></textarea>
+						
+						<section id="checkbox-section">
+							<p>
+							<label for="wantReply">Recive Reply:</label>
+							<input type="checkbox" class="wantReply" id="wantReply" name="wantReply"><br>
+							</p>
+						
+							<label for="copy" class="wantCopyYes">Recive Copy:</label>
+							<p>
+							<label for="wantCopyYes" class="wantCopyNo">Yes</label>
+							<input type="radio" class="wantCopyYes" name="wantCopy" value="Yes">
+							</p>
+							<p>
+							<label for="wantCopyNo">No</label>
+							<input type="radio" class="wantCopyNo" name="wantCopy" value="No" checked>
+							</p>
+						</section>
+
+						<input class="submit" type="submit" value="Submit">
+			
+					</form>
+				<section>
+			</section>
+		</main>
+	</body>
+</html>
