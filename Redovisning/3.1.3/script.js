@@ -3,10 +3,10 @@ const emailsRegistered = ["test@gmail.com", "bob@gmail.com", "email@email.com"];
 
 //List with backgroudColors 
 const backgroudColorList = ["#F4F6F7", "#D98880", "#F1948A", "#C39BD3", "#BB8FCE", "#7FB3D5", "#5DADE2", "#76D7C4", "#73C6B6", "#52BE80", "#52BE80", "#F7DC6F", "#F8C471", "#F0B27A", "#E59866"];
-//Index for currentBackgroundColor
+//Index for currentBackgroundColor.
 let currentBackgroundColorIndex = 0;
 
-//this is an interval for flickering visibility
+//this is an interval for flickering visibility.
 const flickerSignUpMessageInterval = flickerSuccessFieldVisibility();
 
 

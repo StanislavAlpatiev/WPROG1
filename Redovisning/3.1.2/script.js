@@ -1,7 +1,7 @@
-//Array containing dummy value for emails that are "registered" inside "database"
+//Array containing dummy value for emails that are "registered" inside "database".
 const emailsRegistered = ["test@gmail.com", "bob@gmail.com", "email@email.com"];
 
-//this is an interval for flickering visibility
+//this is an interval for flickering visibility.
 const flickerSignUpMessageInterval = flickerSuccessFieldVisibility();
 
 

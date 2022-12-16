@@ -83,7 +83,7 @@ function emailCheck() {
 	let emailIsRegisterd = isEmailRegisterd();
 	//runs emailIsValidRegex function and saves Boolean response.
 	let isValidRegex = emailIsValidRegex();
-	//Create Boolean flag
+	//Create Boolean flag.
 	let validEmail = false;
 	
 	//First check if email follows Regex Pattern.
@@ -216,12 +216,12 @@ function removeSuccessfulRegistrationMessage() {
 	document.getElementById("timeField").innerHTML = '';
 }
 
-//Confirm method used to see that the input values in form are intentional
+//Confirm method used to see that the input values in form are intentional.
 function confirmFormValues() {
 	return confirm("Are these values correct? press OK to confirm");
 }
 
-//prompt to see that user is not a robot
+//prompt to see that user is not a robot.
 function notARobotPrompt() {
 	return prompt("Enter 'Harry Potter' to confirm you are not a Robot to continue.");
 }
@@ -240,7 +240,7 @@ function openWin() {
 	myWindow = window.open("spamPage.html", "_blank", "width=500, height=500");
 }
 
-//This function updates innerHTML for moouseXYWindow
+//This function updates innerHTML for moouseXYWindow.
 function mouseMoveDisplayXY(event) {
 	//Saving the event attributes pageX and pageY into variables for future use.
 	let x = event.pageX;
@@ -267,7 +267,7 @@ function riskyButtonHoverOut() {
 //This function is called from checkKeyPressValue when the down arrow key is pressed.
 function onKeyDownChangeBackgroundColorForward() {
 	//If currentBackgroundColorIndex is at edge, loop it from other edge.
-	//Else increment index value
+	//Else increment index value.
 	currentBackgroundColorIndex = (currentBackgroundColorIndex < backgroudColorList.length - 1) ? currentBackgroundColorIndex + 1 : 0;
 	
 	//Change document body backgroudColor.
@@ -308,16 +308,16 @@ function onLoadFunction() {
 	alert("Press Up and Down Arrow Keys to Change Background Color!\nPress Esc to STOP this feature.");
 }
 
-//This function changes the image inside of slideShow
+//This function changes the image inside of slideShow.
 function changeSlideShowImage(){
-	//Sets the src to current image according to asociated index variable
+	//Sets the src to current image according to asociated index variable.
     //$('#slideshow-img').attr('src', slidshowImgList[currentSlideShowImageIndex]);
 	document.getElementById("slideshow-img").src = slidshowImgList[currentSlideShowImageIndex];
-	//if statments for looping
+	//if statments for looping.
     currentSlideShowImageIndex = (currentSlideShowImageIndex < slidshowImgList.length - 1) ? currentSlideShowImageIndex + 1 : 0;
 }
 
-//Sets interval for slideShow
+//Sets interval for slideShow.
 function changeSlideShowImageInterval(){
 	return setInterval(changeSlideShowImage, 3000);
 }

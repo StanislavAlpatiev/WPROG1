@@ -1,6 +1,7 @@
 //Array containing dummy value for emails that are "registered" inside "database"
 const emailsRegistered = ["test@gmail.com", "bob@gmail.com", "email@email.com"];
 
+//Checking name against regex.
 function isValidName() {
 	const validRegex =  /^[a-zA-Z ]+$/;
 	let nameValue = document.getElementById("name").value;
@@ -16,18 +17,18 @@ function isValidName() {
 
 
 
-//Function that checkes if email given in form has match in "database" or array with registered email
-//If it has a match, change DOM 
-//if error occures regarding wheather the input can be submitted the Boolean isFormSubmittable is toggled
+//Function that checkes if email given in form has match in "database" or array with registered email.
+//If it has a match, change DOM.
+//if error occures regarding wheather the input can be submitted the Boolean isFormSubmittable is toggled.
 function isEmailRegisterd() {
-	//flag to check if email is registered
+	//flag to check if email is registered.
 	let isRegistered = false;
-	//variable storing value of email input field
+	//variable storing value of email input field.
 	let emailValue = document.getElementById("email").value;
 	console.log(emailValue);
 
-	//for-foop checking if emailValue has match is array(emailsRegistered) with registerd email
-	//if email emailValue has match inside emailsRegistered array change Boolean flag to true
+	//for-foop checking if emailValue has match is array(emailsRegistered) with registerd email.
+	//if email emailValue has match inside emailsRegistered array change Boolean flag to true.
 	//
 	for(var i = 0; i < emailsRegistered.length; i++) {
 		if(emailValue == emailsRegistered[i]) {
@@ -43,6 +44,7 @@ function isEmailRegisterd() {
 	}
 }
 
+//Checking email against regex expression.
 function emailIsValidRegex() {
 	const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 	let emailValue = document.getElementById("email").value;
@@ -54,20 +56,20 @@ function emailIsValidRegex() {
 }
 
 function emailCheck() {
-	//runs isEmailRegisterd function and saves Boolean response
+	//runs isEmailRegisterd function and saves Boolean response.
 	let emailIsRegisterd = isEmailRegisterd();
-	//runs emailIsValidRegex function and saves Boolean response
+	//runs emailIsValidRegex function and saves Boolean response.
 	let isValidRegex = emailIsValidRegex();
 	//Create Boolean flag
 	let validEmail = false;
 	
-	//First check if email follows Regex Pattern
+	//First check if email follows Regex Pattern.
 	//If it does follow Regex test if it is already registered. 
 	if(isValidRegex) {
 		if(emailIsRegisterd) {
 			document.getElementById("emailP").innerHTML = "This email is already registered!";
 		} else {
-			//If email is not registered and follows the regex pattern toggle Boolean flag
+			//If email is not registered and follows the regex pattern toggle Boolean flag.
 			document.getElementById("emailP").innerHTML = "";
 			validEmail = true;
 		}
@@ -75,14 +77,14 @@ function emailCheck() {
 		document.getElementById("emailP").innerHTML = "Please enter a valid Email.";
 	}
 	
-	//return if email was valid or not as a Boolean
+	//return if email was valid or not as a Boolean.
 	return validEmail;
 }
 
 function isValidAge() {
-	//flag to check if age has a valid value
+	//flag to check if age has a valid value.
 	let isValid = true;
-	//variable storing value of age input field
+	//variable storing value of age input field.
 	let ageValue = document.getElementById("age").value;
 
 	
@@ -90,7 +92,7 @@ function isValidAge() {
 		isValid = false;
 	}
 	
-	//changes DOM elements innerHTML depending on if isRegistered is true or false
+	//changes DOM elements innerHTML depending on if isRegistered is true or false.
 	if(!isValid) {
 		document.getElementById("ageP").innerHTML = "This age equals 0 or has a negative value, Please try again!";
 		return false;
@@ -101,12 +103,12 @@ function isValidAge() {
 }
 
 function isValidPassword() {
-	//Regex for password
+	//Regex for password.
 	const validRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
-	//variable storing value of age input field
+	//variable storing value of age input field.
 	let passwordValue = document.getElementById("password").value;
 	
-	//changes DOM elements innerHTML depending on if isRegistered is true or false
+	//changes DOM elements innerHTML depending on if isRegistered is true or false.
 	if(passwordValue.match(validRegex)) {
 		document.getElementById("passwordP").innerHTML = "";
 		return true;
@@ -131,7 +133,7 @@ function isFiledsEmpty() {
 	return isFieldEmpty;
 }
 
-//Runs all methods related to the form when the submit button is clicked
+//Runs all methods related to the form when the submit button is clicked.
 function submitForm() {
 	//let emailIsValid = isEmailRegisterd();
 	//let emailValidRegex = emailRegexCheck();
@@ -153,7 +155,7 @@ function submitForm() {
 }
 
 
-//Resets all fields and <p> tags used for error messages inside the form
+//Resets all fields and <p> tags used for error messages inside the form.
 function resetForm() {
 	document.getElementById("registerForm").reset();
 	document.getElementById("nameP").innerHTML = "";
@@ -166,14 +168,14 @@ function resetForm() {
 
 //Prevents default behavior of form when submit button is pressed.
 //Stops event from reloading page. 
-//used so that DOM can change after submiting form without is disapearing due to reload
+//used so that DOM can change after submiting form without is disapearing due to reload.
 var form = document.getElementById("registerForm");
 function handleForm(event) { event.preventDefault(); } 
 form.addEventListener('submit', handleForm);
 
 
 
-//On click event used to trigger isEmailRegisterd function when form is submitted
+//On click event used to trigger isEmailRegisterd function when form is submitted.
 document.getElementById("submitbtn").onclick = submitForm;
 
 

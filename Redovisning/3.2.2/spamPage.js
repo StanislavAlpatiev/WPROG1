@@ -40,11 +40,11 @@ function infoAlert() {
 	alert("Click the stop duplication button to stop window from duplicating every 5 seconds.");
 }
 
-//Calling the flickerSuccessFieldVisibility function to activate flickering
+//Calling the flickerSuccessFieldVisibility function to activate flickering.
 flickerSuccessFieldVisibility();
 
 
-//OnClick event for buttons 
+//OnClick event for buttons.
 document.getElementById("stopButton").onclick = stopNewWindowTimeout;
 document.getElementById("panicButton").onclick = closeWin;
 document.getElementById("infoButton").onclick = infoAlert;

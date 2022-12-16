@@ -315,16 +315,16 @@ function onLoadFunction() {
 function changeSlideShowImage(){
 	//If function is paused it does not update page image
 	if(!isPaused) { 
-		//Sets the src to current image according to asociated index variable
+		//Sets the src to current image according to asociated index variable.
 		//$('#slideshow-img').attr('src', slidshowImgList[currentSlideShowImageIndex]);
 		document.getElementById("slideshow-img").src = slidshowImgList[currentSlideShowImageIndex];
 		
-		//if statments for looping
+		//if statments for looping.
 		currentSlideShowImageIndex = (currentSlideShowImageIndex < slidshowImgList.length - 1) ? currentSlideShowImageIndex + 1 : 0;
 	}
 }
 
-//Sets interval for slideShow
+//Sets interval for slideShow.
 function changeSlideShowImageInterval(){
 	return setInterval(changeSlideShowImage, 3000);
 }

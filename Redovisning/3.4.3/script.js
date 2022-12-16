@@ -1,6 +1,4 @@
-
-
-
+//Send request to API asking for the sum of two integer values.
 function sendRequest() {
     let firstNumber = document.getElementById("firstNumber").value;
     let secondNumber = document.getElementById("secondNumber").value;
@@ -19,7 +17,6 @@ function sendRequest() {
 //Prevents default behavior of form when submit button is pressed.
 //Stops event from reloading page. 
 //used so that DOM can change after submiting form without is disapearing due to reload.
-
 var form = document.getElementById("mathForm");
 function handleForm(event) { event.preventDefault(); } 
 form.addEventListener('submit', handleForm);

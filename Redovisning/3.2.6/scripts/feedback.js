@@ -58,6 +58,7 @@ $(document).ready(function() {
 		}
 	});
 	
+	//Creates an alert window when the function has been submited succesfully.
 	$("#commentForm").submit(function() {
 		let validator = $("#commentForm").validate();
 		if(validator.form()) {
