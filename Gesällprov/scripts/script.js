@@ -68,6 +68,8 @@ $(document).ready(function() {
 	});
 });
 
+//Jquery UI used to create tabs.
+//Change image to display based on active tab.
 $(document).ready(function() {
 	$(".threats-section-article").tabs();
 	
